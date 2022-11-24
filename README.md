@@ -6,6 +6,22 @@ MCST gives MCS players the ability to track every move of the turtles on the ser
 
 Turtles also have the ability to send messages to the application, it can send, for example, a message when it needs fuel or when it starts a farming run. When a turtle crashes it will also send an error message and the status will change to "Error". This way you can see in one quick look if a turtle has crashed and needs player assistance.
 
+## Features
+- See live location (inc. dimension).
+- See current status.
+- See sent messages.
+- See if a turtle has crashed or needs some other form of assistance.
+- See the fuel level.
+
+### Coming Soon!
+- See inventory.
+- Mobile app with push notifications.
+- Train Tracker, the ability to track all of the minecarts currently active on the metro system.
+- Remotly enable/disable turtles and complete systems.
+- Send commands/perform basic actions to turtles.
+
+If you have an awesome idea, feel free to add it in an issue!
+
 ## How can I use it?
 The app is open for the public so even non MCS players can see it. As a visitor, directly head to the [MCS Turtle Tracker](https://mcst.josian.nl).
 
@@ -18,7 +34,7 @@ I ([Josian van Efferen](https://www.linkedin.com/in/josianvanefferen/)) created 
 Every MCS player can ofcourse add their own systems and turtles to this service, so you will never lose your turtle again. It's pretty easy to begin with this system but there are some littles pieces of code you need to add to your script to take full advantage of the service.
 
 ### Step 0 - Modem
-The most important requirement for the service to work is that your turtle or computer ***needs*** an ender modem! Without the modem the service will be completely useless. If your turtle has no more free peripheral slots you will need to make some changes in your system so that every turtle has an ender modem.
+The most important requirement for the service to work is that your turtle or computer ***needs*** an ***ender*** modem! Without the ender modem the service will be completely useless. If your turtle has no more free peripheral slots you will need to make some changes in your system so that every turtle has an ender modem.
 
 ### Step 1 - Library
 You will need the turtletrackerlib.lua for this to work. There are two different libraries, one for turtles and one for (pocket) computers.
@@ -97,3 +113,8 @@ SetReturningStatus()
 SetEmptyingStatus()
 SetCustomStatus("Custom Status")
 ```
+
+### Step 5 - Done
+The service should now be completely operational for your turtle, head over to [MCST](https://mcst.josian.nl) to see it in action. If it doesn't work or you don't understand how to implement it, please take a look at the [SuperFurnace/LavaCollector](https://github.com/MC-Synergy/MCS-Scripts/blob/master/lua%20scripts/SuperFurnace/LavaCollector.lua) for an example or send me a message on Discord.
+
+The service is still in development so if you might encounter a bug, please open a ticket and I will try to fix it as soon as possible (prob eta 2024).
