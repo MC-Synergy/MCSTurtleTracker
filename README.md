@@ -15,10 +15,10 @@ Some features however are only available for MCS players, please head to the [MC
 I ([Josian van Efferen](https://www.linkedin.com/in/josianvanefferen/)) created it for a school project, during semester 3 of HBO ICT & Software Engineering I had to build a full stack web-application so I made this. A few other important goals of this semester where CI/CD, quality assurance and research, you can find more information about my school project in my [portfolio](https://github.com/Josian2004/s3-portfolio/blob/main/Individual/README.md#mcsturtletracker).
 
 ## How can I implement this?
-Every MCS player can ofcourse add their own systems and turtles to this service, so you will never lose your turtle again. It's pretty easy to begin with this system but there are some littles pieces of code you need to add to your script to take full advantage of the system.
+Every MCS player can ofcourse add their own systems and turtles to this service, so you will never lose your turtle again. It's pretty easy to begin with this system but there are some littles pieces of code you need to add to your script to take full advantage of the service.
 
 ### Step 0 - Modem
-The most important requirement for the system to work is that your turtle or computer ***needs*** an ender modem! Without the modem the service will be completely useless. If your turtle has no more free peripheral slots you will need to make some changes in your system so that every turtle has an ender modem.
+The most important requirement for the service to work is that your turtle or computer ***needs*** an ender modem! Without the modem the service will be completely useless. If your turtle has no more free peripheral slots you will need to make some changes in your system so that every turtle has an ender modem.
 
 ### Step 1 - Library
 You will need the turtletrackerlib.lua for this to work. There are two different libraries, one for turtles and one for (pocket) computers.
