@@ -17,7 +17,7 @@ Turtles also have the ability to send messages to the application, it can send, 
 - See inventory.
 - Mobile app with push notifications.
 - Train Tracker, the ability to track all of the minecarts currently active on the metro system.
-- Remotly enable/disable turtles and complete systems.
+- Remotely enable/disable turtles and complete systems.
 - Send commands/perform basic actions to turtles.
 
 If you have an awesome idea, feel free to add it in an issue!
