@@ -23,9 +23,9 @@ Turtles also have the ability to send messages to the application, it can send, 
 If you have an awesome idea, feel free to add it in an issue!
 
 ## How can I use it?
-The app is open for the public so even non MCS players can see it. As a visitor, directly head to the [MCS Turtle Tracker](https://mcst.josian.nl).
+The app is open for the public so even non MCS players can see it. As a visitor, directly head to the [MCS Turtle Tracker](https://turtletracker.mcsynergy.nl).
 
-Some features however are only available for MCS players, please head to the [MCS Portal](https://portal.naamdorpboot.xyz/) and login with your account.
+Some features however are only available for MCS players, please head to the [MCS Portal](https://portal.mcsynergy.nl/) and login with your account.
 
 ## Why did I make it?
 I ([Josian van Efferen](https://www.linkedin.com/in/josianvanefferen/)) created it for a school project, during semester 3 of HBO ICT & Software Engineering I had to build a full stack web-application so I made this. A few other important goals of this semester where CI/CD, quality assurance and research, you can find more information about my school project in my [portfolio](https://github.com/Josian2004/s3-portfolio/blob/main/Individual/README.md#mcsturtletracker).
