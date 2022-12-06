@@ -82,7 +82,7 @@ main()
 ```
 to
 ```lua
-Init(main, 0) -- id = 0 means that the turtle has no system.
+MCST_Init(main, 0) -- id = 0 means that the turtle has no system.
 ```
 Congratulations! Your turtle should now be visible in the app.
 However the turtle doesn't send messages or update their status, to implement this, please follow the next steps.
@@ -90,10 +90,10 @@ However the turtle doesn't send messages or update their status, to implement th
 ### Step 3 - Messages
 Turtles can send messages to the app, there are four types of messages: Info, Warning, Error and Junk. You can send messages at certain places in your script by adding these methods.
 ```lua
-SendInfo("Info Message!")
-SendWarning("Warning Message!")
-SendError("Error Message!")
-SendJunk("Junk Message!")
+MCST_SendInfo("Info Message!")
+MCST_SendWarning("Warning Message!")
+MCST_SendError("Error Message!")
+MCST_SendJunk("Junk Message!")
 ```
 Junk messages are purely used for debug, for example you can send a junk message every time a turtle starts a farm run. These junk messages are automatically hidden in the app and need to be manually enabled to be seen.
 
@@ -101,17 +101,17 @@ Junk messages are purely used for debug, for example you can send a junk message
 The turtle also sends their current status to the app. There are a few pre-ditermined status but you can also set your own custom status. These kinda work the same as messages but the selected status remains until you select another status so make sure that the status is always kept up-to-date in the flow of your script.
 
 ```lua
-SetDoneStatus()
-SetFarmingStatus()
-SetWaitingStatus()
-SetErrorStatus() -- this will show as red in the app and will be automatically set when the turtle crashes
-SetRefuelingStatus()
-SetNeedPlayerStatus() -- this will show as orange in the app
-SetManuallyTerminatedStatus() -- this will show as orange in the app and 
+MCST_SetDoneStatus()
+MCST_SetFarmingStatus()
+MCST_SetWaitingStatus()
+MCST_SetErrorStatus() -- this will show as red in the app and will be automatically set when the turtle crashes
+MCST_SetRefuelingStatus()
+MCST_SetNeedPlayerStatus() -- this will show as orange in the app
+MCST_SetManuallyTerminatedStatus() -- this will show as orange in the app and 
                               -- will be automatically set when the turtle is manually terminated
-SetReturningStatus()
-SetEmptyingStatus()
-SetCustomStatus("Custom Status")
+MCST_SetReturningStatus()
+MCST_SetEmptyingStatus()
+MCST_SetCustomStatus("Custom Status")
 ```
 
 ### Step 5 - Done
