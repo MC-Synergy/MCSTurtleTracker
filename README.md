@@ -74,7 +74,7 @@ end
 main()
 ```
 
-When this is correct, you can start to initialize MCST by replacing the call to your main function with the Init method like seen in the next example. The second parameter is the ID of the system that the turtle is part of, you can see the list of systems on our [MCS Systems API Front-end](https://portal.naamdorpboot.xyz/).
+When this is correct, you can start to initialize MCST by replacing the call to your main function with the Init method like seen in the next example. The second parameter is the ID of the system that the turtle is part of, you can see the list of systems on our [MCS Systems API Front-end](https://portal.naamdorpboot.xyz/). The third parameter is if you want to allow MCST to print information to the turtle, this information can be that MCST has started and that it has succesfully established a connection. The fourth parameter is for if you want that every message and status update sent to MCST is printed in the turtle.
 
 Change
 ```lua
@@ -82,7 +82,7 @@ main()
 ```
 to
 ```lua
-MCST_Init(main, 0) -- id = 0 means that the turtle has no system.
+MCST_Init(main, 0, true, true) -- id = 0 means that the turtle has no system.
 ```
 Congratulations! Your turtle should now be visible in the app.
 However the turtle doesn't send messages or update their status, to implement this, please follow the next steps.
