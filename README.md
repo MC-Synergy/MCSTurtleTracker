@@ -12,9 +12,9 @@ Turtles also have the ability to send messages to the application, it can send, 
 - See sent messages.
 - See if a turtle has crashed or needs some other form of assistance.
 - See the fuel level.
+- See inventory.
 
 ### Coming Soon!
-- See inventory.
 - Mobile app with push notifications.
 - Train Tracker, the ability to track all of the minecarts currently active on the metro system.
 - Remotely enable/disable turtles and complete systems.
@@ -88,14 +88,14 @@ Congratulations! Your turtle should now be visible in the app.
 However the turtle doesn't send messages or update their status, to implement this, please follow the next steps.
 
 ### Step 3 - Messages
-Turtles can send messages to the app, there are four types of messages: Info, Warning, Error and Junk. You can send messages at certain places in your script by adding these methods.
+Turtles can send messages to the app, there are four types of messages: Info, Warning, Error and Debug. You can send messages at certain places in your script by adding these methods.
 ```lua
 MCST_SendInfo("Info Message!")
 MCST_SendWarning("Warning Message!")
 MCST_SendError("Error Message!")
-MCST_SendJunk("Junk Message!")
+MCST_SendDebug("Debug Message!")
 ```
-Junk messages are purely used for debug, for example you can send a junk message every time a turtle starts a farm run. These junk messages are automatically hidden in the app and need to be manually enabled to be seen.
+Debug messages are purely used for debug, for example you can send a debug message every time a turtle starts a farm run. These debug messages are automatically hidden in the app and need to be manually enabled to be seen.
 
 ### Step 4 - Status
 The turtle also sends their current status to the app. There are a few pre-ditermined status but you can also set your own custom status. These kinda work the same as messages but the selected status remains until you select another status so make sure that the status is always kept up-to-date in the flow of your script.
